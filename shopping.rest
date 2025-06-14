@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:8080
+@itemId = 675ea543-3d48-48ad-8eef-efec84c6d7ff
+
+### List shopping items
+GET {{baseUrl}}/shopping-items
+
+### Create shopping item
+POST {{baseUrl}}/shopping-items
+Content-Type: application/json
+
+{
+    "name": "Weed"
+}
+
+### Delete shopping item
+DELETE {{baseUrl}}/shopping-items/{{itemId}}
